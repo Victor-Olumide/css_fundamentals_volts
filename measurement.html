@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>measurements</title>
+    <style>
+        /* absolute measurement -px,cm,mm,in,pt,pc */
+        /* 1in = 96px;
+        1pt = 1/72in = 1/96 * 96/72px = 1.3333px;
+        1pc = 12pt = 16px; */
+        section{
+            width: 500px;
+            height: 500px;
+            border: 12px solid crimson;
+            margin: 10px auto;
+        }
+
+        /* relative measurement- %,em, ex,ch,rem,vw,vh, fr */
+        /* viewport measurement */
+        main{
+            height: 100vh;;
+        }
+        section{
+            width: 70%;
+            font-size: 10px;
+            font-size: 2em;
+        }
+
+        section :first-of-type{
+            background-image: repeating-radial-gradient(circle, red 50%, white 50%);
+        }
+
+        h2{
+            padding: 1.5rem;
+            padding-inline: 2rem;
+            margin: 10px 10 5px 0;
+            background-color: #ffcc00;
+            border:#ffcc00 10px solid;
+            border-block-end-color: pink;
+            border-block-start-color: cyan;
+            border-inline-color: #004080;
+            border-inline-end-color: #555;
+            width: fit-content;
+        }
+
+        section{
+            background-color: whitesmoke;
+            padding: 1.5rem;
+            margin: 10px;
+            border: #ffcc00 10px dashed;
+            border-block-end-color: pink;
+            border-block-start: cyan 15px double;
+            border-inline-color: #004080;
+            border-inline-end-color: #555;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2><strong>1. Selectors</strong> - Selectors are patterns used to select the elements you want to style.</h2>
+        <ul>
+            <li>Element Selector</li>
+            <li>Class Selector</li>
+            <li>ID Selector</li>
+            <li>Attribute Selector</li>
+            <li>Pseudo-class &amp; Pseudo-element</li>
+        </ul>
+    </section>
+    <section>
+        <h2><strong>2. Properties</strong> - Properties define what aspect of the selected element you want to style.</h2>
+        <ul>
+            <li>Color</li>
+            <li>Font</li>
+            <li>Background</li>
+            <li>Border</li>
+            <li>Margin &amp; Padding</li>
+        </ul>
+    </section>
+    <section>
+        <h2><strong>3. Values &amp; Units</strong> - Values are assigned to properties, often using specific units.</h2>
+        <ul>
+            <li>px, em, rem, %, vw, vh</li>
+            <li>Color values (hex, rgb, hsl)</li>
+            <li>Keywords (auto, inherit, initial)</li>
+        </ul>
+    </section>
+    <section>
+        <h2><strong>4. Box Model</strong> - The box model describes how elements are rendered and spaced.</h2>
+        <ul>
+            <li>Content</li>
+            <li>Padding</li>
+            <li>Border</li>
+            <li>Margin</li>
+        </ul>
+    </section>
+    <section>
+        <h2><strong>5. Layout &amp; Positioning</strong> - CSS provides ways to control the layout and position of elements.</h2>
+        <ul>
+            <li>Display</li>
+            <li>Position (static, relative, absolute, fixed, sticky)</li>
+            <li>Flexbox</li>
+            <li>Grid</li>
+            <li>Float &amp; Clear</li>
+        </ul>
+    </section>
+</body>
+</html>
