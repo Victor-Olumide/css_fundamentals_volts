@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+html{
+    --color: cyan;
+    --bgcolor: white;
+    --font: 'Courier New', Courier, monospace;
+    --font-size: 16px;
+}
+
+section{
+    border: 2px solid black;
+}
+
+main{
+    background-color: var(--bgcolor);
+    display: grid;
+    gap : 10px;
+    /* grid-template-columns:1fr 2fr 2fr 1fr; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 80px);
+    grid-template-areas:
+    "a a a a"
+    "a a a a"
+    "b c d e"
+    "b f f e"
+    "b f f e"
+    "g g g g";
+}
+section:first-of-type{
+    grid-area: a;
+    background-color: red;
+}
+
+section:nth-of-type(5){
+    grid-area: f;
+    background-color: green;
+}
+
+section:nth-of-type(4){
+    grid-area: d;
+    background-color: black;
+        color: white;
+
+}
+
+section:nth-of-type(6){
+    grid-area: e;
+    background-color: blue;
+}
+section:nth-of-type(2){
+    grid-area: b;
+    background-color: purple;
+}
+section:nth-of-type(3){
+    grid-area: c;
+    background-color: gold;
+}
+
+section:nth-of-type(7){
+    grid-area: g;
+    background-color: var(--color);
+}
+/* section:nth-of-type(8){
+    grid-area: g;
+} */
