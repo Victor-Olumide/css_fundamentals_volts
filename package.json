@@ -1,0 +1,30 @@
+{
+  "name": "css_fundamentals_volts",
+  "version": "1.0.0",
+  "description": "fundamentals of tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "victor": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Victor-Olumide/css_fundamentals_volts.git"
+  },
+  "keywords": [
+    "tailwindcss",
+    "css",
+    "html",
+    "js"
+  ],
+  "author": "victor olumide",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Victor-Olumide/css_fundamentals_volts/issues"
+  },
+  "homepage": "https://github.com/Victor-Olumide/css_fundamentals_volts#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}

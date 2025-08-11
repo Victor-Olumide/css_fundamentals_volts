@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwindcss</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <h1 class="text-red-500 text-6xl text-center uppercase bg-slate-300 py-10">Fundamentals of Tailwind CSS</h1>
+
+    <h2 class="text-sm/20 text-right text-[brown] bg-slate-200 py-10 pr-[60px]">small</h2>
+    <h2 class="text-3xl text-center text-red-400 bg-slate-400 p-5">Medium</h2>
+    <h2 class="text-6xl text-red-600/55 bg-amber-300 p-5">Large</h2>
+
+    <div class="flex justify-between">
+        <div class="bg-slate-500 text-white p-5">Flex 1</div>
+        <div class="bg-slate-600 text-white p-5">Flex 2</div>
+        <div class="bg-slate-700 text-white p-5">Flex 3</div>
+        <div class="bg-slate-800 text-white p-5">Flex 4</div>
+    </div>
+
+    <article class="bg-[url(./profile_picture.jpg)] bg-cover bg-center h-[800px]">
+        <h2 class="text-4xl text-center text-white bg-slate-700 opacity-50 p-5">Background Image</h2>
+        <p class="text-lg text-center text-white bg-slate-700 opacity-50 p-5">This is a sample paragraph to demonstrate the background image styling.</p>
+    </article>
+
+    <aside class="h-40 bg-gradient-to-r from-40% to-40% from-blue-500 to-green-500  p-5">
+        <h2 class="text-2xl text-center">Gradient Background</h2>
+    </aside>
+
+    <aside class="bg-center m-auto bg-radial from-30% to-30% from-blue-500 to-green-700 h-screen p-5 w-1/2 rounded-lg" >
+        <h2 class="text-2xl text-center">Radial Gradient Background</h2>
+    </aside>
+
+    <section class="grid grid-cols-3 gap-4 p-5">
+        <div class="bg-red-500 text-white p-5">Grid Item 1</div>
+        <div class="bg-green-500 text-white p-5">Grid Item 2</div>
+        <div class="bg-blue-500 text-white p-5">Grid Item 3</div>
+    </section>"
+</html>

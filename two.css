@@ -23,7 +23,7 @@ main{
     /* grid-template-columns:1fr 2fr 2fr 1fr; */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 100px);
-    grid-template-areas: 
+    grid-template-areas:
     "a a h"
     "a a h"
     "b g h"
@@ -31,6 +31,7 @@ main{
     "d d h"
     "e e e";
 }
+
 section:first-of-type{
     grid-area: a;
 }
@@ -60,6 +61,12 @@ section:nth-of-type(8){
     grid-area: d;
 }
 
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 nav ul{
     list-style-type: none;
     display: flex;
@@ -67,7 +74,7 @@ nav ul{
     align-items: center;
     justify-content: space-around;
     border: 20px solid var(--color);
-    background-color: var();
+    background-color: var(--color);
 }
 
 nav a{
@@ -75,15 +82,24 @@ nav a{
 }
 
 div{
+    position: relative;
+    top: 50px;
+    width: 100%;
+}
+
+aside{
+    top: 20vh;
+    position: relative;
     height: 100vh;
-    border: 20px dashed var(--bgcolor);
+    z-index: -1;
+    border: 20px dashed var(--color);
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-div > article{
+aside > article{
     height: 300px;
     width: 300px;
     background-color: var(--bgcolor);
@@ -93,4 +109,12 @@ div > article{
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+
+@media print{
+    h2::before{
+        content: "Printed: ";
+        color: red;
+    }
+
 }

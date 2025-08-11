@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal portfolio</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#home"> Home</a></li>
+            <li><a href="#about" id="about">About</a></li>
+            <li><a href="#port">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+<main class="md:relative md:top-32 z-[-1]">
+    <section id="home">
+        <header class="header">
+            <img src="./profile_picture.jpg" alt="Profile Picture">
+            <h1><span class="text-orange-600 border-b-4 border-dashed">Vic</span>tor Olumide</h1>
+            <P>I am a computer engineering student of ABUAD, graphic designer, backend developer </P>
+        </header>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about">
+            <p>I am a passionate computer engineering student with a keen interest in graphic design and backend development. I enjoy creating innovative solutions and learning new technologies.</p>
+            <p>In my free time, I love to explore new programming languages, work on personal projects, and contribute to open-source communities. I believe in continuous learning and strive to improve my skills every day.</p>
+            <p>Feel free to connect with me on social media or check out my portfolio to see some of my work!</p>
+        </div>
+    </section>
+
+    <section id="port">
+        <h2> Recent projects</h2>
+        <div>
+            <div class="project">
+                <h3>Project 1: Portfolio Website</h3>
+                <p>A personal portfolio website showcasing my skills and projects.</p>
+                <a href="" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2: E-commerce Platform</h3>
+                <p>An e-commerce platform built with modern web technologies.</p>
+                <a href="" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 3: Blogging Platform</h3>
+                <p>A blogging platform where users can create and share their articles.</p>
+                <a href="" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 4: Social Media App</h3>
+                <p>A social media application that connects users and allows them to share content.</p>
+                <a href="" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+</main>
+</body>
+</html>
