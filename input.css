@@ -83,3 +83,65 @@
         @apply bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-md transition-colors duration-300 cursor-pointer;
     }
 }
+@layer components{
+    .bmi{
+        @apply h-screen bg-gradient-to-r  from-green-600 from-50% to-red-600 to-50% flex flex-col items-center justify-center;
+    }
+    .bmi h1{
+        @apply uppercase font-bold text-5xl text-white tracking-[38px] ;
+    }
+    .bmi section{
+        @apply flex flex-row ;
+    }
+    .bmi div{
+        @apply bg-blue-900 text-lg font-bold text-white h-30 flex flex-col  w-[480px] h-[400px] rounded-lg m-5  p-10;
+    }
+    .bmi div:first-of-type span {
+        @apply text-xl  text-left p-7 pt-25 w-[350px] border-b-6 border-white;
+    }
+    .bmi div:first-of-type article {
+        @apply p-8;
+    }
+}
+
+@layer components{
+    .countdown{
+        @apply h-screen bg-gradient-to-r  from-red-600 from-50% to-yellow-400 to-50% flex flex-col items-center justify-center;
+    }
+    .countdown h1{
+        @apply uppercase font-bold text-5xl text-white tracking-[38px] ;
+    }
+    .countdown section{
+        @apply grid md:grid-cols-6 grid-cols-1 md:gap-10 gap-2 ;
+    }
+    .countdown div{
+        @apply flex flex-col w-[120px] items-center mt-6 ;
+    }
+    .countdown span:first-of-type{
+        @apply bg-blue-700 text-3xl text-white w-full h-20 flex items-center justify-center rounded-t-lg;
+    }
+    .countdown span:last-of-type{
+        @apply bg-blue-950 text-white  text-xl capitalize  uppercase w-full  flex items-center justify-center rounded-b-lg;
+    }
+}
+
+@layer components{
+    .clock{
+        @apply h-screen bg-gradient-to-r  from-green-800 from-50% to-green-700 to-50% flex flex-col items-center justify-center;
+    }
+    .clock h1{
+        @apply uppercase font-bold text-5xl text-white tracking-[38px] ;
+    }
+    .clock section{
+        @apply md:gap-10 gap-2 flex items-center justify-center ;
+    }
+     .clock div{
+        @apply flex flex-col w-[250px] items-center mt-6 ;
+    }
+    .clock span:first-of-type{
+        @apply bg-slate-700 text-9xl font-medium text-white w-full h-40 flex items-center justify-center rounded-t-lg;
+    }
+    .clock span:last-of-type{
+        @apply bg-slate-900 text-3xl text-white w-full h-10  flex items-center justify-center rounded-b-lg;
+    }
+}
